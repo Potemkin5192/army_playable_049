@@ -1079,22 +1079,6 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 	this._renderFirstFrame();
 }).prototype = getMCSymbolPrototype(lib.numbers_mid, new cjs.Rectangle(-10,-202,19,404), null);
-(lib.hand_Anim = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-	// Layer_1
-	this.instance = new lib.male_hand();
-	this.instance.setTransform(-86,-58,0.5961,0.5961);
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-	this._renderFirstFrame();
-}).prototype = getMCSymbolPrototype(lib.hand_Anim, new cjs.Rectangle(-86,-58,172.9,116.9), null);
 (lib.appear_FX = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1569,6 +1553,22 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 	this._renderFirstFrame();
 }).prototype = getMCSymbolPrototype(lib.hangar_move, new cjs.Rectangle(-525,-525,1050,1050), null);
+(lib.handanimmc = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.male_hand();
+	this.instance.setTransform(-64,-43,0.441,0.441);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this._renderFirstFrame();
+}).prototype = getMCSymbolPrototype(lib.handanimmc, new cjs.Rectangle(-64,-43,127.9,86.5), null);
 (lib.garagehl_mc = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1931,6 +1931,23 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-644.2,-636.7,1406.3000000000002,1406.3000000000002);
+(lib.hand_Anim = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.handanimmc();
+	this.instance.setTransform(0.4,0.4);
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({scaleX:0.8104,scaleY:0.8104,rotation:-14.9983,x:-18.3,y:-6.05},19,cjs.Ease.quadIn).to({scaleX:1,scaleY:1,rotation:0,x:0.4,y:0.4},15,cjs.Ease.quadOut).wait(31));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-77.4,-53.1,141.8,97.4);
 (lib.money_anim = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -2210,24 +2227,6 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-545,-545,1090,1090);
-(lib.hand_anim_tutor_mc = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-	// Layer_1
-	this.instance = new lib.hand_Anim();
-	this.instance.setTransform(18.85,-6.7,1,1,14.9992);
-	this.instance.alpha = 0.0195;
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({rotation:14.9983,alpha:1},9,cjs.Ease.quadIn).to({regX:-0.1,regY:-0.1,scaleX:0.7958,scaleY:0.7958,rotation:0,x:-11.1,y:-6.6},20,cjs.Ease.quadIn).to({regX:0,regY:0,scaleX:1,scaleY:1,rotation:14.9983,x:18.85,y:-6.7},30,cjs.Ease.quadOut).to({alpha:0.0195},10,cjs.Ease.quadOut).wait(20).to({x:267.15},0).to({alpha:1},10,cjs.Ease.quadIn).to({regX:-0.1,regY:-0.1,scaleX:0.7958,scaleY:0.7958,rotation:0,x:237.2,y:-6.6},19,cjs.Ease.quadIn).to({regX:0,regY:0,scaleX:1,scaleY:1,rotation:14.9983,x:267.15,y:-6.7},30,cjs.Ease.quadOut).to({alpha:0.0195},10,cjs.Ease.quadOut).wait(21).to({x:18.85,y:224.9},0).to({alpha:1},10,cjs.Ease.quadIn).to({regX:-0.1,regY:-0.1,scaleX:0.7958,scaleY:0.7958,rotation:0,x:-11.1,y:225},19,cjs.Ease.quadIn).to({regX:0,regY:0,scaleX:1,scaleY:1,rotation:14.9983,x:18.85,y:224.9},30,cjs.Ease.quadOut).to({alpha:0.0195},10,cjs.Ease.quadOut).wait(21).to({x:267.15},0).to({alpha:1},10,cjs.Ease.quadIn).to({regX:-0.1,regY:-0.1,scaleX:0.7958,scaleY:0.7958,rotation:0,x:237.2,y:225},19,cjs.Ease.quadIn).to({regX:0,regY:0,scaleX:1,scaleY:1,rotation:14.9983,x:267.15,y:224.9},30,cjs.Ease.quadOut).to({alpha:0.0195},10,cjs.Ease.quadOut).wait(21));
-	this._renderFirstFrame();
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-79.6,-84.9,445.70000000000005,389.20000000000005);
 (lib.hall = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -2522,30 +2521,35 @@ if (reversed == null) { reversed = false; }
 		this.stop();
 	}
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(22).call(this.frame_34).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(22).call(this.frame_34).wait(36));
 	// hit_area
 	this.instance = new lib.hit_area();
 	this.instance.setTransform(-0.1,1.8,0.3307,0.4194);
 	new cjs.ButtonHelper(this.instance, 0, 1, 2, false, new lib.hit_area(), 3);
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true},1).wait(34));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true},1).wait(69));
 	// emoji
 	this.instance_1 = new lib.emoji_anrgy();
 	this.instance_1.setTransform(-108.4,-36.95,0.053,0.053);
 	this.instance_1.alpha = 0.0586;
 	this.instance_1._off = true;
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({_off:false},0).to({scaleX:0.5,scaleY:0.5,x:-0.1,y:-96.3,alpha:1},13,cjs.Ease.backOut).wait(10).to({x:0.85,y:-170,alpha:0.0586},8,cjs.Ease.cubicIn).to({_off:true},1).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({_off:false},0).to({scaleX:0.5,scaleY:0.5,x:-0.1,y:-96.3,alpha:1},13,cjs.Ease.backOut).wait(10).to({x:0.85,y:-170,alpha:0.0586},8,cjs.Ease.cubicIn).to({_off:true},1).wait(37));
+	// hand
+	this.hand = new lib.hand_Anim();
+	this.hand.name = "hand";
+	this.hand.setTransform(104.7,85.85,1,1,14.9983);
+	this.timeline.addTween(cjs.Tween.get(this.hand).to({_off:true},1).wait(69));
 	// button_assign
 	this.btn = new lib.assign_btn_1();
 	this.btn.name = "btn";
 	this.btn.setTransform(0,56.9);
-	this.timeline.addTween(cjs.Tween.get(this.btn).wait(35));
+	this.timeline.addTween(cjs.Tween.get(this.btn).to({_off:true},35).wait(35));
 	// card
 	this.instance_2 = new lib.card_marskmenship();
 	this.instance_2.setTransform(-0.6,2);
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(35));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({_off:true},35).wait(35));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-118,-200,234.8,307);
+p.nominalBounds = new cjs.Rectangle(-118,-200,295.8,344.8);
 (lib.card_3 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -2579,6 +2583,11 @@ if (reversed == null) { reversed = false; }
 	this.instance_1.alpha = 0.0586;
 	this.instance_1._off = true;
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({_off:false},0).to({scaleX:0.5,scaleY:0.5,x:-0.1,y:-96.3,alpha:1},27,cjs.Ease.backOut).wait(20).to({x:0.85,y:-170,alpha:0.0586},17,cjs.Ease.cubicIn).to({_off:true},1).wait(4));
+	// hand
+	this.hand = new lib.hand_Anim();
+	this.hand.name = "hand";
+	this.hand.setTransform(104.7,85.85,1,1,14.9983);
+	this.timeline.addTween(cjs.Tween.get(this.hand).to({_off:true},1).wait(69));
 	// button_assign
 	this.btn = new lib.assign_btn_1();
 	this.btn.name = "btn";
@@ -2590,7 +2599,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(70));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-117,-200,234.8,305);
+p.nominalBounds = new cjs.Rectangle(-117,-200,294.8,344.8);
 (lib.card_2 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -2624,6 +2633,11 @@ if (reversed == null) { reversed = false; }
 	this.instance_1.alpha = 0.0586;
 	this.instance_1._off = true;
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({_off:false},0).to({scaleX:0.5,scaleY:0.5,x:-0.1,y:-96.3,alpha:1},27,cjs.Ease.backOut).wait(20).to({x:0.85,y:-170,alpha:0.0586},17,cjs.Ease.cubicIn).to({_off:true},1).wait(4));
+	// hand
+	this.hand = new lib.hand_Anim();
+	this.hand.name = "hand";
+	this.hand.setTransform(104.7,85.85,1,1,14.9983);
+	this.timeline.addTween(cjs.Tween.get(this.hand).to({_off:true},1).wait(69));
 	// button_assign
 	this.btn = new lib.assign_btn_1();
 	this.btn.name = "btn";
@@ -2635,7 +2649,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(70));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-117.4,-200,234.8,305.1);
+p.nominalBounds = new cjs.Rectangle(-117.4,-200,295.20000000000005,344.8);
 (lib.card_1 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -2657,30 +2671,35 @@ if (reversed == null) { reversed = false; }
 		this.stop();
 	}
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(22).call(this.frame_34).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(22).call(this.frame_34).wait(36));
 	// hit_area
 	this.instance = new lib.hit_area();
 	this.instance.setTransform(-0.1,1.8,0.3307,0.4194);
 	new cjs.ButtonHelper(this.instance, 0, 1, 2, false, new lib.hit_area(), 3);
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true},1).wait(34));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true},1).wait(69));
 	// emoji
 	this.instance_1 = new lib.emoji_anrgy();
 	this.instance_1.setTransform(-108.4,-36.95,0.053,0.053);
 	this.instance_1.alpha = 0.0586;
 	this.instance_1._off = true;
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({_off:false},0).to({scaleX:0.5,scaleY:0.5,x:-0.1,y:-96.3,alpha:1},13,cjs.Ease.backOut).wait(10).to({x:0.85,y:-170,alpha:0.0586},8,cjs.Ease.cubicIn).to({_off:true},1).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({_off:false},0).to({scaleX:0.5,scaleY:0.5,x:-0.1,y:-96.3,alpha:1},13,cjs.Ease.backOut).wait(10).to({x:0.85,y:-170,alpha:0.0586},8,cjs.Ease.cubicIn).to({_off:true},1).wait(37));
+	// hand
+	this.hand = new lib.hand_Anim();
+	this.hand.name = "hand";
+	this.hand.setTransform(104.7,85.85,1,1,14.9983);
+	this.timeline.addTween(cjs.Tween.get(this.hand).to({_off:true},1).wait(69));
 	// button_assign
 	this.btn = new lib.assign_btn_1();
 	this.btn.name = "btn";
 	this.btn.setTransform(0,56.9);
-	this.timeline.addTween(cjs.Tween.get(this.btn).wait(35));
+	this.timeline.addTween(cjs.Tween.get(this.btn).to({_off:true},35).wait(35));
 	// card
 	this.instance_2 = new lib.card_melele();
 	this.instance_2.setTransform(-0.6,2);
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(35));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({_off:true},35).wait(35));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-118,-200,234.8,307);
+p.nominalBounds = new cjs.Rectangle(-118,-200,295.8,344.8);
 (lib.base1 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -2810,11 +2829,6 @@ if (reversed == null) { reversed = false; }
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
-	// hand
-	this.hand = new lib.hand_anim_tutor_mc();
-	this.hand.name = "hand";
-	this.hand.setTransform(-8.15,-16);
-	this.timeline.addTween(cjs.Tween.get(this.hand).wait(1));
 	// card4
 	this.card4 = new lib.card_4();
 	this.card4.name = "card4";
@@ -2836,7 +2850,7 @@ if (reversed == null) { reversed = false; }
 	this.card1.setTransform(-125.1,115.3,1,1,0,0,0,-0.1,0.3);
 	this.timeline.addTween(cjs.Tween.get(this.card1).wait(1));
 	this._renderFirstFrame();
-}).prototype = getMCSymbolPrototype(lib.ui_soldiers, new cjs.Rectangle(-242.9,-220,485.3,442), null);
+}).prototype = getMCSymbolPrototype(lib.ui_soldiers, new cjs.Rectangle(-242.9,-220,545.7,479.8), null);
 (lib.allview = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -3010,8 +3024,8 @@ if (reversed == null) { reversed = false; }
 			currentCard = evt.currentTarget
 			if (currentCard.clickable) {
 				btnSFX.play()
-				ui.hand.visible = false
 				currentCard.btn.gotoAndPlay(1)
+				currentCard.hand.visible = false
 				makeFacilityClickable()
 				hideUI()
 				createjs.Tween.get(arrows).to({alpha:1},500)
@@ -3335,8 +3349,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"index_atlas_P_1.png?1707133062869", id:"index_atlas_P_1"},
-		{src:"index_atlas_NP_1.jpg?1707133062869", id:"index_atlas_NP_1"}
+		{src:"index_atlas_P_1.png?1707140065802", id:"index_atlas_P_1"},
+		{src:"index_atlas_NP_1.jpg?1707140065802", id:"index_atlas_NP_1"}
 	],
 	preloads: []
 };
